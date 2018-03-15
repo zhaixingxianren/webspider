@@ -69,7 +69,7 @@ if __name__ == '__main__':
 
     localtime = time.strftime("%Y-%m-%d %H:%M", time.localtime())
    
-    f = codecs.open('./today-'+localtime+'.cvs', 'wb', 'utf_8_sig')  
+    f = codecs.open('./today-'+localtime+'.csv', 'wb', 'utf_8_sig')  
     writer = csv.writer(f)
     
     res = requests.get(qd_url,headers=headers,timeout=5)
